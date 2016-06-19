@@ -1,5 +1,5 @@
 .header {
-  background: red;
+  //background: red;
   padding-top: 25px;
 }
 
@@ -24,7 +24,7 @@
 .brand__text {
   display: inline-block;
   color: $orange;
-  font-family: "als_malinaregular", Arial, sans-serif;
+  font-family: "ALS Malina", Arial, sans-serif;
   font-size: 36px;
   vertical-align: middle;
   margin-left: 15px;
@@ -36,6 +36,7 @@
 }
 
 .header__nav {
+  display: inline-block;
   margin-top: 13px;
 }
 
@@ -82,3 +83,33 @@
   }
 }
 
+.round__list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+
+.round__item {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(#fff, .2);
+  margin-right: 20px;
+}
+
+.round__item-img {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  margin: 12px;
+}
+
+.round__item-link {
+  display: inline-block;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+
+}
