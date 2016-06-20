@@ -8,6 +8,7 @@
 }
 
 .brand-link {
+  display: block;
   text-decoration: none;
 }
 
@@ -24,7 +25,7 @@
 .brand__text {
   display: inline-block;
   color: $orange;
-  font-family: "ALS Malina", Arial, sans-serif;
+  font-family: "ALS Malina", Helvetica, Arial, sans-serif;
   font-size: 36px;
   vertical-align: middle;
   margin-left: 15px;
@@ -95,8 +96,11 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(#fff, .2);
+  background: rgba(#fff, .3);
   margin-right: 20px;
+  &:hover {
+    background: rgba($orange, .6);
+  }
 }
 
 .round__item-img {
@@ -112,4 +116,27 @@
   width: 42px;
   height: 42px;
 
+}
+
+.nav__dropdown-list {
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  padding: 25px 25px 39px 25px;
+  background: rgba(red, .3);
+  border-radius:20px;
+  top: 62px;
+  right: -62px;
+  width: 227px;
+}
+
+.dropdown__item {
+  padding-top: 16px;
+  padding-left: 24px;
+  letter-spacing: 0;
+}
+
+.dropdown__item-link {
+  color: $black;
+  text-decoration: none;
+  white-space: pre;
 }
