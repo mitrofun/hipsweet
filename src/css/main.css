@@ -358,6 +358,9 @@ body {
   position: relative;
   letter-spacing: 2px;
 }
+.nav__item:hover:not(.nav__item_dropdown) .nav__item-link {
+  color: #fca211;
+}
 
 .nav__item-link {
   text-decoration: none;
@@ -422,7 +425,8 @@ body {
   right: -62px;
   width: 227px;
   visibility: hidden;
-  transition: 0.3s;
+  transition: 0.5s;
+  opacity: 0;
 }
 .nav__dropdown-list:before {
   content: "";

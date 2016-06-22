@@ -10,7 +10,7 @@ window.onload = function () {
             console.log(this);
             this.classList.toggle('dropdown_is-active');
         };
-        
+
         navigateDroupdownsItems[i].addEventListener('mouseover', changeStatus, 'false');
         navigateDroupdownsItems[i].addEventListener('mouseout', changeStatus, 'false');
     }

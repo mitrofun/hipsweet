@@ -46,7 +46,14 @@
   margin-right: 31px;
   position: relative;
   letter-spacing: 2px;
+  &:hover:not(.nav__item_dropdown) {
+    .nav__item-link {
+      color: $orange;
+    }
+  }
 }
+
+
 
 .nav__item-link {
   text-decoration: none;
@@ -120,7 +127,8 @@
   right: -62px;
   width: 227px;
   visibility: hidden;
-  transition: 0.3s;
+  transition: 0.5s;
+  opacity: 0;
 
   &:before {
     content: "";
