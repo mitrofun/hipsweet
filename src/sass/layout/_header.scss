@@ -1,6 +1,7 @@
 .header {
-  //background: red;
   padding-top: 25px;
+  margin-bottom: 68px;
+  font-size: 16px;
 }
 
 .header__left {
@@ -83,33 +84,33 @@
   }
 }
 
-.round__list {
+.optional__list {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
 
-.round__item {
+.optional__item {
   display: inline-block;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(#fff, .3);
+  background: $clear-white;
   margin-right: 20px;
-  &:hover {
+  &:hover {   //TODO : сделать смену цвета у вложенной иконки
     background: rgba($orange, .6);
   }
 }
 
-.round__item-img {
+.optional__item-img {
   display: inline-block;
   width: 18px;
   height: 17px;
   margin: 12px;
 }
 
-.round__item-link {
+.optional__item-link {
   display: inline-block;
   text-align: center;
   width: 42px;
@@ -147,6 +148,7 @@
   .nav__dropdown-list {
     opacity: 1;
     visibility: visible;
+    z-index: 10;
   }
 
   .nav__item-link {

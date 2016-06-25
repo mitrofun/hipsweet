@@ -1,3 +1,168 @@
 .main {
   background: linear-gradient(to bottom left, #8F0112, #C5242C);
 }
+
+.carousel__items {
+  color: white;
+}
+
+.item__characteristic {
+   @include span(2);
+}
+
+.product__ingredient {
+  margin-top: 85px;
+  position: relative;
+}
+
+.ingredient__items {
+  position: absolute;
+  //visibility: hidden;
+  z-index: 10;
+  top:0;
+  left: 117px;
+  color: $black;
+  background: $manu-color;
+  padding: 30px 60px 30px 30px;
+  border-radius: 20px;
+  width: 380px;
+
+}
+
+.ingredient__icon,
+.ingredient__name,
+.ingredient__count {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ingredient__icon {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  max-width:100%;
+
+}
+
+.ingredient__count {
+  float: right;
+}
+
+.optional__item_ingredient {
+  margin-left: 25px;
+}
+
+.optional__title {
+  margin-top: 10px;
+}
+
+.product__period-live {
+  margin-top: 195px;
+  margin-left: -12px;
+  cursor: default;
+}
+
+.period-live__title {
+  color: rgba(#fff, .4);;
+}
+
+.period-live__hour {
+  font-family: $malina-font-family;
+  font-size: 24px;
+  margin-top: -9px;
+}
+
+.item__picture {
+   @include span(6);
+}
+
+.product__img {
+  position: relative;
+  z-index: 1;
+  margin-left: 25px;
+  max-height: 475px;
+}
+
+.item__description {
+  @include span(6.35 last);
+}
+
+.item__background-title {
+  position: absolute;
+  display: block;
+  text-transform: uppercase;
+  left: 6%;
+  top: 37%;
+  font-size: 150px;
+  font-family: $malina-font-family;
+  color: $more-clear-white;
+  padding-left: 20px;
+  z-index: 0;
+  cursor: default;
+}
+
+.product__title {
+  cursor: default;
+  margin-top: 36px;
+}
+
+.product__description {
+  cursor: default;
+  padding-top: 11px;
+  width: 94%;
+  margin-bottom: 26px;
+}
+
+.order__price {
+  display: inline-block;
+  font-family: $malina-font-family;
+  font-size: 62px;
+  vertical-align: middle;
+  line-height: 1.24;
+  margin-right: 40px;
+  cursor: default;
+}
+
+.order__button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.order__button-link {
+  display: block;
+  text-decoration: none;
+  padding: 14px 24px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  background: $orange;
+  color: #a4151c;
+  border-radius: 25px;
+  transition: 0.6s;
+  &:hover {
+    color: $orange;
+    background: #641a00;
+  }
+}
+
+.carousel__item-selector {
+  @include span(16);
+  padding-bottom: 56px;
+  text-align: center;
+}
+
+.selector__list {
+  display: inline-block;
+  margin-top: 42px;
+}
+
+.selector__item {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-right: 30px;
+  &_active {
+    border: 4px solid $orange;
+  }
+}

@@ -1,4 +1,6 @@
 @import "compass/utilities/sprites";
-@import "icon/*.png";
+@import "icon/nav-icon/*.png";
+@import "icon/ingredient-icon/*.png";
 
-@include all-icon-sprites;
+@include all-nav-icon-sprites;
+@include all-ingredient-icon-sprites;

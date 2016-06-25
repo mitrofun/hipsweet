@@ -1,7 +1,11 @@
 $orange : #fca211;
 $black : #575757;
 $more-black: #333;
-$manu-color:rgba(red, .3);
+$manu-color:rgba(white, .8);
+$clear-white: rgba(#fff, .2);
+$more-clear-white: rgba(#fff, .1);
+$malina-font-family: "ALS Malina", Helvetica, Arial, sans-serif;;
+
 
 // plugins
 @import "compass";
@@ -21,6 +25,7 @@ $manu-color:rgba(red, .3);
 @import "base/adjustment";
 @import "base/fonts";
 @import "base/grids";
+@import "base/typography";
 
 
 // layouts
