@@ -55,14 +55,12 @@
 }
 
 
-
 .nav__item-link {
   text-decoration: none;
   display: block;
   color: #fff;
   padding: 10px;
 }
-
 
 .nav__item_dropdown {
 
@@ -115,7 +113,22 @@
   text-align: center;
   width: 42px;
   height: 42px;
+}
 
+.optional__item_cabinet {
+  &:hover {
+    .nav__icon_cabinet {
+       background-position: 0 0;
+    }
+  }
+}
+
+.optional__item_search {
+  &:hover {
+    .nav__icon_search {
+       background-position: 0 -190px;
+    }
+  }
 }
 
 .nav__dropdown-list {

@@ -55,10 +55,10 @@
                   </ul>
                 </nav>
                 <ul class="optional__list">
-                  <li class="optional__item"><a href="javascript:void (0)" class="optional__item-link">
-                      <div class="optional__item-img nav-icon-cabinet"></div></a></li>
-                  <li class="optional__item"><a href="javascript:void (0)" class="optional__item-link">
-                      <div class="optional__item-img nav-icon-search"></div></a></li>
+                  <li class="optional__item optional__item_cabinet"><a href="javascript:void (0)" class="optional__item-link">
+                      <div class="optional__item-img nav__icon_cabinet"></div></a></li>
+                  <li class="optional__item optional__item_search"><a href="javascript:void (0)" class="optional__item-link">
+                      <div class="optional__item-img nav__icon_search"></div></a></li>
                 </ul>
               </div>
             </div>
@@ -71,15 +71,36 @@
                   <div class="item__characteristic">
                     <div class="product__ingredient">
                       <div class="optional__item optional__item_ingredient"><a href="javascript:void (0);" class="optional__item-link">
-                          <div class="optional__item-img nav-icon-ingredient"></div></a>
+                          <div class="optional__item-img nav__icon_ingredient"></div></a>
                         <ul class="ingredient__items">
-                          <div class="ingredient__item">
-                            <div class="ingredient__icon ingredient-icon-flour"></div>
-                            <div class="ingredient__name">мука пшеничная</div>
-                            <div class="ingredient__count">200 г.</div>
-                          </div>
+                                  <li class="ingredient__item">
+                                    <div class="ingredient__icon ingredient__icon_flour"></div>
+                                    <div class="ingredient__name">мука пшеничная</div>
+                                    <div class="ingredient__count">200 г.</div>
+                                  </li>
+                                  <li class="ingredient__item">
+                                    <div class="ingredient__icon ingredient__icon_egg"></div>
+                                    <div class="ingredient__name">яицо</div>
+                                    <div class="ingredient__count">3 шт.</div>
+                                  </li>
+                                  <li class="ingredient__item">
+                                    <div class="ingredient__icon ingredient__icon_sugar"></div>
+                                    <div class="ingredient__name">сахарный песок</div>
+                                    <div class="ingredient__count">20 г.</div>
+                                  </li>
+                                  <li class="ingredient__item">
+                                    <div class="ingredient__icon ingredient__icon_butter"></div>
+                                    <div class="ingredient__name">масло сливочное</div>
+                                    <div class="ingredient__count">50 г.</div>
+                                  </li>
+                                  <li class="ingredient__item">
+                                    <div class="ingredient__icon ingredient__icon_cmilk"></div>
+                                    <div class="ingredient__name">молоко сгущеное</div>
+                                    <div class="ingredient__count">100 г.</div>
+                                  </li>
                         </ul>
                       </div>
+                      <div class="optional__title">Ингредиенты</div>
                     </div>
                     <div class="product__period-live">
                       <div class="period-live__title">Срок хранения:</div>
@@ -101,14 +122,13 @@
                 </div>
               </div>
               <div class="carousel__item-selector">
-                <ul class="selector__list">
-                  <li class="selector__item selector__item_active"></li>
-                  <li class="selector__item"></li>
-                  <li class="selector__item"></li>
-                  <li class="selector__item"></li>
-                  <li class="selector__item"></li>
-                  <li class="selector__item"></li>
-                </ul>
+                <ul class="selector__list"><a href="javascript: void(0);" class="selector__item-link">
+                    <li class="selector__item selector__item_active"></li></a><a href="javascript: void(0);" class="selector__item-link">
+                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
+                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
+                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
+                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
+                    <li class="selector__item"></li></a></ul>
               </div>
             </div>
           </div>
@@ -130,12 +150,12 @@
         <section class="map"></section>
         <!-- --\\-- _map --//---->
       </div>
-      <!-- --//-- _footer --\\---->
-      <footer class="footer">
-        <div class="container"></div>
-      </footer>
-      <!-- --\\-- _footer --//---->
-      <script src="js/app.js"></script>
     </div>
+    <!-- --//-- _footer --\\---->
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+    <!-- --\\-- _footer --//---->
+    <script src="js/app.js"></script>
   </body>
 </html>

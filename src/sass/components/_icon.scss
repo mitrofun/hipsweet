@@ -1,6 +1,12 @@
 @import "compass/utilities/sprites";
-@import "icon/nav-icon/*.png";
-@import "icon/ingredient-icon/*.png";
+$default-sprite-separator: "_";
 
-@include all-nav-icon-sprites;
-@include all-ingredient-icon-sprites;
+$nav__icon-spacing: 30px;
+$nav__icon-sprite-base-class: ".nav__icon";
+@import "icon/nav__icon/*.png";
+@include all-nav__icon-sprites;
+
+$ingredient__icon-spacing: 10px;
+$ingredient__icon-sprite-base-class: ".ingredient__icon";
+@import "icon/ingredient__icon/*.png";
+@include all-ingredient__icon-sprites;

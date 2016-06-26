@@ -1,5 +1,14 @@
 //- Created by mitri4 at 25.06.16
 // --//-- _main --\\--
+
+-var ingredients= [{icon:"ingredient__icon_flour", name: "мука пшеничная", count: "200 г."},{icon:"ingredient__icon_egg", name: "яицо", count: "3 шт."}, {icon:"ingredient__icon_sugar", name: "сахарный песок", count: "20 г."}, {icon:"ingredient__icon_butter", name: "масло сливочное", count: "50 г."}, {icon:"ingredient__icon_cmilk", name: "молоко сгущеное", count: "100 г."}]
+
+mixin ingredient(ingredient_icon, ingredient_name, ingredient_count)
+	li.ingredient__item
+		.ingredient__icon(class=ingredient_icon)
+		.ingredient__name=ingredient_name
+		.ingredient__count=ingredient_count
+
 section.main
 	include main/_header
 	.main__carousel
@@ -10,12 +19,12 @@ section.main
 							.product__ingredient
 								.optional__item.optional__item_ingredient
 									a.optional__item-link(href="javascript:void (0);")
-										.optional__item-img.nav-icon-ingredient
+										.optional__item-img.nav__icon_ingredient
+
 									ul.ingredient__items
-										.ingredient__item
-											.ingredient__icon.ingredient-icon-flour
-											.ingredient__name мука пшеничная
-											.ingredient__count 200 г.
+										each item in ingredients
+											+ingredient(item.icon, item.name, item.count)
+								.optional__title Ингредиенты
 							.product__period-live
 								.period-live__title Срок хранения:
 								.period-live__hour 120 часов
@@ -32,10 +41,16 @@ section.main
 						.item__background-title пироженка
 			.carousel__item-selector
 				ul.selector__list
-					li.selector__item.selector__item_active
-					li.selector__item
-					li.selector__item
-					li.selector__item
-					li.selector__item
-					li.selector__item
+					a.selector__item-link(href="javascript: void(0);")
+						li.selector__item.selector__item_active
+					a.selector__item-link(href="javascript: void(0);")
+						li.selector__item
+					a.selector__item-link(href="javascript: void(0);")
+						li.selector__item
+					a.selector__item-link(href="javascript: void(0);")
+						li.selector__item
+					a.selector__item-link(href="javascript: void(0);")
+						li.selector__item
+					a.selector__item-link(href="javascript: void(0);")
+						li.selector__item
 // --\\-- _main --//--

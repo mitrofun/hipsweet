@@ -17,16 +17,30 @@
 
 .ingredient__items {
   position: absolute;
-  //visibility: hidden;
+  visibility: hidden;
   z-index: 10;
-  top:0;
+  top:-70px;
   left: 117px;
   color: $black;
   background: $manu-color;
-  padding: 30px 60px 30px 30px;
+  padding: 35px 60px 20px 30px;
   border-radius: 20px;
   width: 380px;
-
+  font-size: 16px;
+  font-family: Hevetica, Arial, sans-serif;
+  transition: 0.3s;
+  opacity: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 0;
+    margin-left: -34px;
+    border: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 14px solid $manu-color;
+    border-bottom: 20px solid transparent;
+  }
 }
 
 .ingredient__icon,
@@ -36,20 +50,38 @@
   vertical-align: middle;
 }
 
+.ingredient__name {
+  width: 70%;
+}
+
+.ingredient__item {
+  padding-bottom: 14px;
+}
+
 .ingredient__icon {
-  height: 28px;
-  width: 28px;
-  margin-right: 10px;
+  height: 24px;
+  width: 26px;
+  margin-right: 5px;
+  margin-left: 6px;
   max-width:100%;
 
 }
 
 .ingredient__count {
-  float: right;
+  width: 14%;
 }
 
 .optional__item_ingredient {
   margin-left: 25px;
+  &:hover {
+    .ingredient__items {
+      visibility: visible;
+      opacity: 1;
+    }
+    .nav__icon_ingredient {
+        background-position: 0 -94px;
+    }
+  }
 }
 
 .optional__title {
@@ -57,7 +89,7 @@
 }
 
 .product__period-live {
-  margin-top: 225px;
+  margin-top: 194px;
   margin-left: -12px;
   cursor: default;
 }
@@ -110,7 +142,7 @@
 
 .product__description {
   cursor: default;
-  padding-top: 11px;
+  padding-top: 10px;
   width: 94%;
   margin-bottom: 26px;
 }
@@ -158,13 +190,38 @@
   margin-top: 42px;
 }
 
-.selector__item {
-  cursor: pointer;
+.selector__item-link {
   display: inline-block;
+  margin: 0 10px;
+}
+
+.selector__item {
   border-radius: 50%;
   border: 4px solid #fff;
-  margin-right: 30px;
+  position: relative;
+  margin: 10px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -6px;
+    left: -6px;
+    right: 0;
+    bottom: 0;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+
   &_active {
     border: 4px solid $orange;
+    cursor: default;
+  }
+
+  &:hover:not(&_active) {
+    &:before {
+      visibility: visible;
+    }
   }
 }
