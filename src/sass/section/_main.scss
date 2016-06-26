@@ -113,7 +113,15 @@
   position: relative;
   z-index: 1;
   margin-left: 25px;
+  margin-bottom: -19px;
   max-height: 475px;
+}
+
+.product__img_shadow {
+  width: 435px;
+  margin-left: 25px;
+  height: 60px;
+  background: url("../img/shadow.png");
 }
 
 .item__description {
@@ -125,7 +133,7 @@
   display: block;
   text-transform: uppercase;
   left: 6%;
-  top: 38%;
+  top: 39%;
   font-size: 150px;
   font-family: $malina-font-family;
   color: $more-clear-white;
@@ -181,13 +189,12 @@
 
 .carousel__item-selector {
   @include span(16);
-  padding-bottom: 56px;
   text-align: center;
+  margin-bottom: 44px;
 }
 
 .selector__list {
   display: inline-block;
-  margin-top: 42px;
 }
 
 .selector__item-link {
