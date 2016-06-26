@@ -1,0 +1,43 @@
+//- Created by mitri4 at 26.06.16
+// --//-- _header --\\--
+- var sweets = ["Торты", "Печенье", "Пончики", "Рулеты", "Зефир", "Шоколад", "Пирожные", "Конфеты"]
+- var company = ["История", "Филиалы", "О нас"]
+-  var team = ["Тони Ройстер", "Ричард Джейс", "Марти Модстер", "Тони Ройстер", "Ричард Джейс", "Марти Модстер", "Тони Ройстер"]
+
+header.header
+	.conteiner
+		.header__left
+			a.brand-link(href="javascript:void(0)")
+				.brand__logo: img(src="img/logo.png" class="logo__img" alt="hipsweet logo")
+				.brand__text Hipsweet
+		.header__right
+			nav.header__nav
+				ul.nav__list
+					li.nav__item.nav__item_dropdown
+						a.nav__item-link(href="javascript:void(0)") Сладости
+						ul.nav__dropdown-list
+							for item in sweets
+								li.dropdown__item
+									a.dropdown__item-link(href="javascript:void(0)")=item
+					li.nav__item
+						a.nav__item-link(href="javascript:void(0)") Доставка
+					li.nav__item.nav__item_dropdown
+						a.nav__item-link(href="javascript:void(0)") Компания
+						ul.nav__dropdown-list
+							for item in company
+								li.dropdown__item
+									a.dropdown__item-link(href="javascript:void(0)")=item
+					li.nav__item.nav__item_dropdown
+						a.nav__item-link(href="javascript:void(0)") Команда
+						ul.nav__dropdown-list
+							for item in team
+								li.dropdown__item
+									a.dropdown__item-link(href="javascript:void(0)")=item
+			ul.optional__list
+				li.optional__item
+					a.optional__item-link(href="javascript:void (0)")
+						.optional__item-img.nav-icon-cabinet
+				li.optional__item
+					a.optional__item-link(href="javascript:void (0)")
+						.optional__item-img.nav-icon-search
+// --\\-- _header --//--

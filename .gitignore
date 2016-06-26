@@ -2,3 +2,5 @@
 /src/.sass-cache/
 /external/
 /src/css/
+/src/tmp/
+/node_modules/

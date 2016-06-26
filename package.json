@@ -1,0 +1,29 @@
+{
+  "name": "hipsweet",
+  "version": "1.0.0",
+  "description": "landing for home work",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitrofun/hipsweet.git"
+  },
+  "author": "mitri4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitrofun/hipsweet/issues"
+  },
+  "homepage": "https://github.com/mitrofun/hipsweet#readme"
+}
