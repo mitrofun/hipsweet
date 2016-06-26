@@ -1,0 +1,6 @@
+.why-tasty__left {
+  @include span(9);
+}
+.why-tasty__right {
+  @include span(7 last);
+}
