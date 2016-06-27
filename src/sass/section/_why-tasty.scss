@@ -1,6 +1,7 @@
 .why-tasty {
   color: #747474;
   background: linear-gradient(to bottom right, #B4B4B3, #D3D4D4);
+  position: relative;
 }
 
 .why-tasty__left {
@@ -10,10 +11,15 @@
 }
 
 .why-tasty__right {
-  @include span(6.4 last);
+  margin-right: 140px;
+  position: absolute;
   min-height: 708px;
+  min-width: 383px;
   margin-top: 53px;
-  background: url("../img/cook.png") bottom left no-repeat;
+  bottom: 0;
+  right: 0;
+  background: url("../img/cook.png") no-repeat;
+
 }
 
 .why-tasty__title {
@@ -30,6 +36,7 @@
 
 .why-tasty__advantage-list {
   font-size: 0;
+  margin-bottom: 120px;
 }
 
 .advantage__item {
