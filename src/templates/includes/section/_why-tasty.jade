@@ -5,19 +5,21 @@
 
 mixin advantage(img, text)
 	li.advantage__item
-		.advantage__picture_bg
+		.advantage__picture
+			.advantage__picture_bg
 			img.advantage__picture_img(src=img)
 		.advantage__text=text
 
 section.why-tasty
 	.conteiner
-
 		.why-tasty__left
 			h3.why-tasty__title Почему так вкусно?
-			.why-tasty__annotation В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури
+			.why-tasty__annotation
+				p В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури
+
 			ul.why-tasty__advantage-list
-			each item in advantage_list
-				+advantage(item.img, item.text)
+				each item in advantage_list
+					+advantage(item.img, item.text)
 
 		.why-tasty__right
 // --\\-- _why-tasty --//--

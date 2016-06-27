@@ -1,4 +1,15 @@
 /* ----- adjustment ----- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.42;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 body,
 html {
   width: 100%;
@@ -37,5 +48,4 @@ ul {
   margin-top: -125px;
   position: relative;
 }
-
 

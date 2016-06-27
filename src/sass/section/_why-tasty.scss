@@ -1,6 +1,71 @@
-.why-tasty__left {
-  @include span(9);
+.why-tasty {
+  color: #747474;
+  background: linear-gradient(to bottom right, #B4B4B3, #D3D4D4);
 }
+
+.why-tasty__left {
+  @include push(0.73);
+  @include span(8.87);
+  margin-top: 100px;
+}
+
 .why-tasty__right {
-  @include span(7 last);
+  @include span(6.4 last);
+  min-height: 761px;
+  background: url("../img/cook.png") bottom left no-repeat;
+}
+
+.why-tasty__title {
+  color: #2b2f5f;
+}
+
+.why-tasty__annotation {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  width: 76%;
+  p {
+    line-height: 1.5;
+  }
+}
+
+.why-tasty__advantage-list {
+  font-size: 0;
+}
+
+.advantage__item {
+  display: inline-block;
+  width: 23.3333333%;
+  margin-right: 10.5%;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.advantage__picture {
+  height: 100px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.advantage__picture_bg {
+  width: 90px;
+  height: 90px;
+  background: rgba(black, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.advantage__picture_img {
+  position: absolute;
+  z-index: 1;
+  margin-top: -10px;
+  margin-left: -16px;
+  width: 76%;
+}
+
+.advantage__text {
+  font-family: "ALS Malina", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
 }

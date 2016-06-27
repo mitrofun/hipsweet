@@ -17,7 +17,6 @@ $malina-font-family: "ALS Malina", Helvetica, Arial, sans-serif;;
 @import "normalize";
 @import "susy";
 
-
 // abstracts
 @import "abstracts/mixins";
 
@@ -27,14 +26,10 @@ $malina-font-family: "ALS Malina", Helvetica, Arial, sans-serif;;
 @import "base/grids";
 @import "base/typography";
 
-
-// layouts
-@import "layout/main";
-@import "layout/header";
-
 // components
 @import "components/icon";
 
 // section
+@import "section/header";
 @import "section/main";
 @import "section/why-tasty";
