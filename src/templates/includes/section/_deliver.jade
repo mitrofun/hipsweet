@@ -1,4 +1,27 @@
 //- Created by mitri4 at 25.06.16
 // --//-- _deliver --\\--
+
+-var sweets= [{title: "Торты", img:"img/content/sweets/cakes.png"},{title: "Печенье", img:"img/content/sweets/cookies.png"}, {title: "Пончики", img:"img/content/sweets/donuts.png"}, {title: "Рулеты", img:"img/content/sweets/rolls.png"}, {title: "Зефир", img:"img/content/sweets/zefir.png"}, {title: "Шоколад", img:"img/content/sweets/chocolate.png"}, {title: "Пирожные", img:"img/content/sweets/brownies.png"}, {title: "Конфеты", img:"img/content/sweets/candies.png"}]
+-var text= "Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами"
+
+mixin sweet_item(img, title, text)
+	li.sweets__item
+		.sweet__picture
+			img.sweet__picture_img(src=img)
+		h4.sweet__title=title
+		.sweet__description
+			p=text
+
 section.deliver
+	.conteiner
+		h3.title_deliver Мы поставляем
+		.deliver__text	Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив
+			a.deliver__send_link(href="#send_mail") форму
+			|. После с Вами свяжется один из наших поваров и обсудит заказ более детально.
+
+		ul.sweets__list
+			for item in sweets
+				+sweet_item(item.img, item.title, text)
+
+
 // --\\-- _deliver --//--

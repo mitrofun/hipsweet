@@ -11,7 +11,8 @@
 
 .why-tasty__right {
   @include span(6.4 last);
-  min-height: 761px;
+  min-height: 708px;
+  margin-top: 53px;
   background: url("../img/cook.png") bottom left no-repeat;
 }
 

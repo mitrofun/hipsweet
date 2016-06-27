@@ -1,0 +1,51 @@
+$dark:#393939;
+
+.deliver{
+  color: #ab594a;
+  background: url("../img/background/pattern.jpg");
+  text-align: center;
+}
+
+.title_deliver {
+  color:$dark;
+  padding-top: 96px;
+  padding-right: 42px;
+  margin-bottom: 11px;
+}
+
+.deliver__text {
+  @include span(12);
+  @include push(2);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.deliver__send_link {
+  color:$dark;
+}
+
+.sweets__list {
+  @extend %clearfix;
+  margin-top: 76px;
+  padding-bottom: 82px;
+}
+
+.sweets__item {
+  @include span(4 of 16);
+  margin-right: 0;
+}
+
+.sweet__picture {
+  margin-bottom: 3px;
+}
+
+.sweet__title {
+  color:$dark;
+  font-size: 32px;
+}
+
+.sweet__description {
+  margin-bottom: -10px;
+  font-size: 13px;
+  font-weight: 600;
+}
