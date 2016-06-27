@@ -178,10 +178,12 @@
 
 .dropdown__item {
   padding-top: 16px;
+  padding-right: 10px;
   padding-left: 50px;
   letter-spacing: 0;
   position: relative;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dropdown__item-link {
