@@ -22,6 +22,12 @@ section.team
 		.form__left
 			h3.form__title
 		.form__right
-			form.form__send-form
-				input(placeholder="Введите Ваше имя")
+			form(class="form__send-form" method="post" id="send_mail")
+				input(class="send-form__name" name="name" placeholder="Введите Ваше имя")
+				input(class="send-form__email" name="email" placeholder="Введите Ваш Email")
+				input(class="send-form__phone" name="phone" placeholder="8 (___) ___-__-__" )
+				.send-form__checkbox
+					input(type="checkbox" id="capcha" class="send-form__capcha")
+					label(for="capcha") Заказать обратный звонок
+				button(type="submit" class="send-form__submit")
 // --\\-- _team --//--
