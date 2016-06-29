@@ -1,0 +1,74 @@
+.team {
+      background-image: radial-gradient(farthest-side at center center, #fff 40%, #c9c9c9);
+}
+
+.team__cooks {
+  margin-top: 82px;
+  @extend %clearfix;
+}
+
+.team__cooks_left {
+  @include span(5);
+}
+
+.team__cooks_right {
+  @include push(.5);
+  @include span(10.5 last);
+}
+
+.team__list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.team__tabs {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  padding-top: 20px;
+  padding-left: 27px;
+  padding-bottom: 29px;
+  margin-right: 6px;
+  &_active {
+    background: #893213;
+    border-radius: 20px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      border-top:10px solid #893213;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      margin-bottom: -10px;
+      left: 50%;
+      margin-left: -16px;
+    }
+    .contributor__name {
+      color: #ffa92b;
+    }
+    .contributor__position {
+      color: white;
+    }
+  }
+}
+
+
+
+.tabs__contributor_link {
+  display: block;
+  text-decoration: none;
+}
+
+.contributor__name {
+  font-size: 30px;
+  color: #253c6e;
+  margin-bottom: 5px;
+
+}
+
+.contributor__position {
+  font-size: 16px;
+  color: #8d8d8d;
+  letter-spacing: 1px;
+}
