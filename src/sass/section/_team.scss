@@ -1,9 +1,10 @@
 .team {
-      background-image: radial-gradient(farthest-side at center center, #fff 40%, #c9c9c9);
+  background-image: radial-gradient(farthest-side at center center, #fff 40%, #c9c9c9);
+  padding-bottom: 117px;
 }
 
 .team__cooks {
-  margin-top: 82px;
+  padding-top: 82px;
   @extend %clearfix;
 }
 
@@ -117,7 +118,7 @@
   position: relative;
   height: 410px;
   width: 844px;
-  margin: 69px 117px 117px 117px;
+  margin: 69px 117px 0 117px;
   &:before {
     content: "";
     position: absolute;
