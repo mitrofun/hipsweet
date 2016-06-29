@@ -16,6 +16,10 @@
   @include span(10.5 last);
 }
 
+.team__title {
+  color: #2b2f60;
+}
+
 .team__list {
   display: inline-block;
   vertical-align: top;
