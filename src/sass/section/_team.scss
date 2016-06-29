@@ -20,6 +20,10 @@
   color: #2b2f60;
 }
 
+.team__list_content {
+  margin-top: 104px;
+}
+
 .team__list {
   display: inline-block;
   vertical-align: top;
@@ -29,10 +33,8 @@
   display: inline-block;
   vertical-align: top;
   width: 32%;
-  padding-top: 20px;
-  padding-left: 27px;
-  padding-bottom: 29px;
-  margin-right: 6px;
+  transition: .4s;
+  &:hover,
   &_active {
     background: #893213;
     border-radius: 20px;
@@ -52,16 +54,18 @@
       color: #ffa92b;
     }
     .contributor__position {
-      color: white;
+      color: #fff;
     }
   }
 }
 
-
-
 .tabs__contributor_link {
   display: block;
   text-decoration: none;
+  padding-top: 20px;
+  padding-left: 27px;
+  padding-bottom: 29px;
+  margin-right: 6px;
 }
 
 .contributor__name {
@@ -75,4 +79,128 @@
   font-size: 16px;
   color: #8d8d8d;
   letter-spacing: 1px;
+}
+
+.contributer__description {
+  display: none;
+  color: #747474;
+  font-style: italic;
+  font-size: 14px;
+  columns: 2;
+  column-gap: 450px;
+  margin-right: 28px;
+  line-height: 1.5;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    strong {
+      display: block;
+      color: #484848;
+      margin-bottom: 220px;
+    }
+  }
+
+
+
+  &_active {
+    display: block;
+  }
+}
+
+
+.team__form {
+  font-size:0;
+  background: url("/img/background/form.jpg") center no-repeat;
+  border-radius: 25px;
+  position: relative;
+  height: 410px;
+  width: 844px;
+  margin: 69px 117px 117px 117px;
+  &:before {
+    content: "";
+    position: absolute;
+    min-height: 613px;
+    min-width: 527px;
+    background: url("/img/chief.png");
+    bottom: 0;
+    right: 0;
+    margin-bottom: 410px;
+    margin-right: 221px;
+  }
+}
+
+.form__left {
+  display: inline-block;
+  width: 50%;
+}
+
+.form__title {
+  position: absolute;
+  letter-spacing: 7px;
+  line-height: 1.25;
+  width: 50%;
+  color: #fff;
+  left: 67px;
+  top: 114px;
+}
+
+.form__right {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+  min-height: 100%;
+  border-radius: 0 25px 25px 0;
+  background-color: rgba(#000, .6);
+}
+
+.form__send-mail {
+  position: relative;
+  padding: 80px 85px 46px 50px;
+}
+
+.send-mail__input {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.send-form__checkbox {
+  color: #fff;
+}
+
+.send-mail__submit {
+  display: block;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  background: $orange;
+  border-radius: 50%;
+  border: none;
+  bottom: -54px;
+  right: -34px;
+  outline: none;
+  transition: all 0.3s;
+  &:hover {
+    background: #641a00;
+    &:after {
+      background: url("/img/arrow-hover.png");
+    }
+  }
+  &:after {
+    transition: all 0.3s;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 51px;
+    margin-left: 20px;
+    background: url("/img/arrow.png");
+  }
 }
