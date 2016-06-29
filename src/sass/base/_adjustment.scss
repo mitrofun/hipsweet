@@ -37,15 +37,15 @@ ul {
   &:after {
     content: "";
     display: block;
-    height: 125px;
+    height: 90px;
     margin-top: 20px;
   }
 }
 
 .footer {
-  min-height: 125px;
+  min-height: 90px;
   width: 100%;
-  margin-top: -125px;
+  margin-top: -90px;
   position: relative;
 }
 

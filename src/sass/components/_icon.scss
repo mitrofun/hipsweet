@@ -10,3 +10,7 @@ $ingredient__icon-spacing: 10px;
 $ingredient__icon-sprite-base-class: ".ingredient__icon";
 @import "icon/ingredient__icon/*.png";
 @include all-ingredient__icon-sprites;
+
+$ingredient__icon-sprite-base-class: ".socials__icon";
+@import "icon/socials/*.png";
+@include all-socials-sprites;

@@ -1,0 +1,70 @@
+.footer {
+  color: #8d8d8d;
+}
+
+.footer__logo {
+  @include span(4);
+  display: inline-block;
+}
+
+.footer__logo_pic {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__logo_img {
+  height: 56px;
+  margin-left: 2px;
+}
+
+.footer__logo_text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fca211;
+  font-family: "ALS Malina", Helvetica, Arial, sans-serif;
+  font-size: 29px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+}
+
+.footer__copyright {
+  @include span(3);
+  font-size: 14px;
+}
+
+.footer__copyright_text {
+  margin-top: 23px;
+}
+
+.footer__address {
+  @include span(5);
+  font-size: 14px;
+}
+
+.footer__address_text {
+  margin-top: 23px;
+  margin-left: 27px;
+}
+
+.footer__social {
+  @include span(4 last);
+}
+
+.socials__list {
+  margin-left: 27px;
+  margin-top: 20px;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-right: 26px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__item-link {
+  display: block;
+  width: 22px;
+  height: 22px;
+}

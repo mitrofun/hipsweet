@@ -15,6 +15,25 @@ window.onload = function () {
     
 };
 
+ymaps.ready(init);
+    var myMap;
 
+    function init(){     
+        myMap = new ymaps.Map("map__content", {
+            center: [58.612137, 49.589505],
+            zoom: 16,
+            controls: ['zoomControl']
+
+        });
+        myPlacemark = new ymaps.Placemark([58.612137, 49.589505], {
+            balloonContent: 'Hipsweet Мы не знаем где находимся!'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map.png',
+            iconImageSize: [42, 59]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+    }
 
 

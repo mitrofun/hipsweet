@@ -1,16 +1,21 @@
 //- Created by mitri4 at 25.06.16
 // --//-- _footer --\\--
+-var socials=["socials_facebook", "socials_instagram", "socials_ok", "socials_twitter", "socials_vkontakte"]
+
 footer.footer
-	.container
+	.conteiner
 		.footer__logo
 			.footer__logo_pic
 				img.footer__logo_img(src="img/logo.png" alt="logo")
 			.footer__logo_text Hipsweet
-		.footer__copyright © 2016 Все права защищены.
-		.footer__addres г. Москва, Вознесенский проспект 44 оф 166
+		.footer__copyright
+			.footer__copyright_text © 2016 Все права защищены.
+		.footer__address
+			.footer__address_text г. Москва, Вознесенский проспект 44 оф 166
 		.footer__social
-			ul.social__list
-				li.social__item
-					a.socials__item-link(href="javascript: void(0);")
+			ul.socials__list
+				for item in socials
+					li.socials__item
+						a.socials__item-link(href="javascript: void(0);" class=item)
 
 // --\\-- _footer --//--
