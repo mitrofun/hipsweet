@@ -23,6 +23,17 @@
 
 .team__list_content {
   margin-top: 104px;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: url("/img/quotes.png") no-repeat;
+    bottom: 100%;
+    left: 30%;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .team__list {

@@ -16,9 +16,9 @@ section.deliver
 	.conteiner
 		h3.title_deliver Мы поставляем
 		.deliver__text	Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив
+			=' '
 			a.deliver__send_link(href="#send_mail") форму
 			|. После с Вами свяжется один из наших поваров и обсудит заказ более детально.
-
 		ul.sweets__list
 			for item in sweets
 				+sweet_item(item.img, item.title, text)
