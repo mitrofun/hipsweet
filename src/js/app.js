@@ -1,4 +1,4 @@
-window.onload = function () {
+$(document).ready(function() {
 
     console.log('start');
 
@@ -12,8 +12,44 @@ window.onload = function () {
         navigateDroupdownsItems[i].addEventListener('mouseover', changeStatus, 'false');
         navigateDroupdownsItems[i].addEventListener('mouseout', changeStatus, 'false');
     }
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+
+    $('.deliver__send_link').click( function(e){
+    	e.preventDefault();
+	    $("html, body").delay(200).animate({scrollTop: $('#send_mail').offset().top }, 2000);
+    });
+
+	var tabs = $('.team__tabs');
+	var paragraphs = $('.contributer__description');
+
+	tabs.on('click', function(event) {
+        console.log("click");
+		event.preventDefault();
+		tabs.removeClass('team__tabs_active');
+		paragraphs.removeClass('contributer__description_active');
+		$(this).addClass('team__tabs_active');
+		var tab = this;
+		tabs.each(function(index, el) {
+			if (el === tab) {
+				$(paragraphs[index]).addClass('contributer__description_active');
+			}
+		});
+	});
+
+    $(".send-mail_phone").inputmask({"mask":"8 (999) 999-99-99"});
+
     
-};
+	$('.questions__item').on('click', function() {
+		console.log("click");
+		$('.questions__item').removeClass('questions__item_active');
+		$(this).addClass('questions__item_active');
+	});
+
+});
 
 ymaps.ready(init);
     var myMap;
@@ -35,5 +71,3 @@ ymaps.ready(init);
         myMap.geoObjects.add(myPlacemark);
         myMap.behaviors.disable('scrollZoom');
     }
-
-

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=1100">
     <title>Hipsweet</title>
     <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+    <!-- build:css-->
+    <link rel="stylesheet" href="vendors/Swiper/dist/css/swiper.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <body>
     <div class="wrapper">
       <div class="main-content">
@@ -67,73 +70,175 @@
           </header>
           <!-- --\\-- _header --//---->
           <div class="main__carousel">
-            <div class="conteiner">
-              <div class="carousel__items">
-                <div class="carousel__item carousel__item_active">
-                  <div class="item__characteristic">
-                    <div class="product__ingredient">
-                      <div class="optional__item optional__item_ingredient"><a href="javascript:void (0);" class="optional__item-link">
-                          <div class="optional__item-img nav__icon_ingredient"></div></a>
-                        <ul class="ingredient__items">
-                                  <li class="ingredient__item">
-                                    <div class="ingredient__icon ingredient__icon_flour"></div>
-                                    <div class="ingredient__name">мука пшеничная</div>
-                                    <div class="ingredient__count">200 г.</div>
-                                  </li>
-                                  <li class="ingredient__item">
-                                    <div class="ingredient__icon ingredient__icon_egg"></div>
-                                    <div class="ingredient__name">яицо</div>
-                                    <div class="ingredient__count">3 шт.</div>
-                                  </li>
-                                  <li class="ingredient__item">
-                                    <div class="ingredient__icon ingredient__icon_sugar"></div>
-                                    <div class="ingredient__name">сахарный песок</div>
-                                    <div class="ingredient__count">20 г.</div>
-                                  </li>
-                                  <li class="ingredient__item">
-                                    <div class="ingredient__icon ingredient__icon_butter"></div>
-                                    <div class="ingredient__name">масло сливочное</div>
-                                    <div class="ingredient__count">50 г.</div>
-                                  </li>
-                                  <li class="ingredient__item">
-                                    <div class="ingredient__icon ingredient__icon_cmilk"></div>
-                                    <div class="ingredient__name">молоко сгущеное</div>
-                                    <div class="ingredient__count">100 г.</div>
-                                  </li>
-                        </ul>
-                      </div>
-                      <div class="optional__title">Ингредиенты</div>
-                    </div>
-                    <div class="product__period-live">
-                      <div class="period-live__title">Срок хранения:</div>
-                      <div class="period-live__hour">120 часов</div>
-                    </div>
-                  </div>
-                  <div class="item__picture"><img src="img/content/products/cake.png" alt="cake" class="product__img">
-                    <div class="product__img_shadow"></div>
-                  </div>
-                  <div class="item__description">
-                    <h3 class="product__title">Sweet Cupcake</h3>
-                    <div class="product__description">
-                      <p>	В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
-                    </div>
-                    <div class="produxt__order">
-                      <div class="order__price">199 ¤</div>
-                      <div class="order__button"><a href="javascript:void (0);" class="order__button-link">Заказать</a></div>
-                    </div>
-                  </div>
-                  <div class="item__background-title">пироженка</div>
-                </div>
-              </div>
-              <div class="carousel__item-selector">
-                <ul class="selector__list"><a href="javascript: void(0);" class="selector__item-link">
-                    <li class="selector__item selector__item_active"></li></a><a href="javascript: void(0);" class="selector__item-link">
-                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
-                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
-                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
-                    <li class="selector__item"></li></a><a href="javascript: void(0);" class="selector__item-link">
-                    <li class="selector__item"></li></a></ul>
-              </div>
+            <div class="conteiner swiper-container">
+              <ul class="carousel__items swiper-wrapper">
+                        <li class="carousel__item swiper-slide">
+                          <div class="item__characteristic">
+                            <div class="product__ingredient">
+                              <div class="optional__item optional__item_ingredient"><a href="javascript:void (0);" class="optional__item-link">
+                                  <div class="optional__item-img nav__icon_ingredient"></div></a>
+                                <ul class="ingredient__items">
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_flour"></div>
+                                            <div class="ingredient__name">мука пшеничная</div>
+                                            <div class="ingredient__count">200 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_egg"></div>
+                                            <div class="ingredient__name">яицо</div>
+                                            <div class="ingredient__count">3 шт.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_sugar"></div>
+                                            <div class="ingredient__name">сахарный песок</div>
+                                            <div class="ingredient__count">20 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_butter"></div>
+                                            <div class="ingredient__name">масло сливочное</div>
+                                            <div class="ingredient__count">50 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_cmilk"></div>
+                                            <div class="ingredient__name">молоко сгущеное</div>
+                                            <div class="ingredient__count">100 г.</div>
+                                          </li>
+                                </ul>
+                              </div>
+                              <div class="optional__title">Ингредиенты</div>
+                            </div>
+                            <div class="product__period-live">
+                              <div class="period-live__title">Срок хранения:</div>
+                              <div class="period-live__hour">120 часов</div>
+                            </div>
+                          </div>
+                          <div class="item__picture"><img src="img/content/products/cake.png" alt="cake" class="product__img">
+                            <div class="product__img_shadow"></div>
+                          </div>
+                          <div class="item__description">
+                            <h3 class="product__title">Sweet Cupcake</h3>
+                            <div class="product__description">
+                              <p> В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                            </div>
+                            <div class="product__order">
+                              <div class="order__price">199 ¤</div>
+                              <div class="order__button"><a href="javascript:void (0);" class="order__button-link">Заказать</a></div>
+                            </div>
+                          </div>
+                          <div class="item__background-title">пироженка</div>
+                        </li>
+                        <li class="carousel__item swiper-slide">
+                          <div class="item__characteristic">
+                            <div class="product__ingredient">
+                              <div class="optional__item optional__item_ingredient"><a href="javascript:void (0);" class="optional__item-link">
+                                  <div class="optional__item-img nav__icon_ingredient"></div></a>
+                                <ul class="ingredient__items">
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_flour"></div>
+                                            <div class="ingredient__name">мука пшеничная</div>
+                                            <div class="ingredient__count">200 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_egg"></div>
+                                            <div class="ingredient__name">яицо</div>
+                                            <div class="ingredient__count">3 шт.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_sugar"></div>
+                                            <div class="ingredient__name">сахарный песок</div>
+                                            <div class="ingredient__count">20 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_butter"></div>
+                                            <div class="ingredient__name">масло сливочное</div>
+                                            <div class="ingredient__count">50 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_cmilk"></div>
+                                            <div class="ingredient__name">молоко сгущеное</div>
+                                            <div class="ingredient__count">100 г.</div>
+                                          </li>
+                                </ul>
+                              </div>
+                              <div class="optional__title">Ингредиенты</div>
+                            </div>
+                            <div class="product__period-live">
+                              <div class="period-live__title">Срок хранения:</div>
+                              <div class="period-live__hour">120 часов</div>
+                            </div>
+                          </div>
+                          <div class="item__picture"><img src="img/content/products/cake.png" alt="cake" class="product__img">
+                            <div class="product__img_shadow"></div>
+                          </div>
+                          <div class="item__description">
+                            <h3 class="product__title">Web Сookies</h3>
+                            <div class="product__description">
+                              <p> В основе пирожного Web Сookies выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                            </div>
+                            <div class="product__order">
+                              <div class="order__price">199 ¤</div>
+                              <div class="order__button"><a href="javascript:void (0);" class="order__button-link">Заказать</a></div>
+                            </div>
+                          </div>
+                          <div class="item__background-title">пироженка</div>
+                        </li>
+                        <li class="carousel__item swiper-slide">
+                          <div class="item__characteristic">
+                            <div class="product__ingredient">
+                              <div class="optional__item optional__item_ingredient"><a href="javascript:void (0);" class="optional__item-link">
+                                  <div class="optional__item-img nav__icon_ingredient"></div></a>
+                                <ul class="ingredient__items">
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_flour"></div>
+                                            <div class="ingredient__name">мука пшеничная</div>
+                                            <div class="ingredient__count">200 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_egg"></div>
+                                            <div class="ingredient__name">яицо</div>
+                                            <div class="ingredient__count">3 шт.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_sugar"></div>
+                                            <div class="ingredient__name">сахарный песок</div>
+                                            <div class="ingredient__count">20 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_butter"></div>
+                                            <div class="ingredient__name">масло сливочное</div>
+                                            <div class="ingredient__count">50 г.</div>
+                                          </li>
+                                          <li class="ingredient__item">
+                                            <div class="ingredient__icon ingredient__icon_cmilk"></div>
+                                            <div class="ingredient__name">молоко сгущеное</div>
+                                            <div class="ingredient__count">100 г.</div>
+                                          </li>
+                                </ul>
+                              </div>
+                              <div class="optional__title">Ингредиенты</div>
+                            </div>
+                            <div class="product__period-live">
+                              <div class="period-live__title">Срок хранения:</div>
+                              <div class="period-live__hour">120 часов</div>
+                            </div>
+                          </div>
+                          <div class="item__picture"><img src="img/content/products/cake.png" alt="cake" class="product__img">
+                            <div class="product__img_shadow"></div>
+                          </div>
+                          <div class="item__description">
+                            <h3 class="product__title">Sweet Candy</h3>
+                            <div class="product__description">
+                              <p> В основе пирожного Sweet Candy выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                            </div>
+                            <div class="product__order">
+                              <div class="order__price">199 ¤</div>
+                              <div class="order__button"><a href="javascript:void (0);" class="order__button-link">Заказать</a></div>
+                            </div>
+                          </div>
+                          <div class="item__background-title">пироженка</div>
+                        </li>
+              </ul>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
@@ -175,7 +280,7 @@
         <section class="deliver">
           <div class="conteiner">
             <h3 class="title_deliver">Мы поставляем</h3>
-            <div class="deliver__text">	Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#send_mail" class="deliver__send_link">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.
+            <div class="deliver__text">Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#send_mail" class="deliver__send_link">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.
             </div>
             <ul class="sweets__list">
                       <li class="sweets__item">
@@ -262,19 +367,19 @@
             <div class="team__list_content">
               <div id="#tony" class="contributer__description contributer__description_active">
                 <p>Тони Ройстер наш Главный шеф повар!Родился в Ленинграде  в 1985 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Владимира Владимировича на открытых и закрытых мероприятия.</p>
-                <p><strong>	Тони Ройстер неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</strong></p>
+                <p><strong>Тони Ройстер неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</strong></p>
                 <p>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале «Северная кухня»; выезжал на гастроли в Москву, открывая «pop-up» проект DOOR 19.</p>
                 <p>Тони Ройстер занимается развитием и инновациями в русской гастрономии, а также увлекается искусством — пишет картины.</p>
               </div>
               <div id="#richard" class="contributer__description">
                 <p>Ричард Джейс наш Главный Кондитер!Родился в Ленинграде  в 1985 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Владимира Владимировича на открытых и закрытых мероприятия.</p>
-                <p><strong>	Ричард Джейс неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</strong></p>
+                <p><strong>Ричард Джейс неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</strong></p>
                 <p>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале «Северная кухня»; выезжал на гастроли в Москву, открывая «pop-up» проект DOOR 19.</p>
                 <p>Ричард Джейс занимается развитием и инновациями в русской гастрономии, а также увлекается искусством — пишет картины.</p>
               </div>
               <div id="#maity" class="contributer__description">
                 <p>Майти Модстер наш Дегустатор!Родился в Ленинграде  в 1985 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Владимира Владимировича на открытых и закрытых мероприятия.</p>
-                <p><strong>	Майти Модстер неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</strong></p>
+                <p><strong>Майти Модстер неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</strong></p>
                 <p>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале «Северная кухня»; выезжал на гастроли в Москву, открывая «pop-up» проект DOOR 19.</p>
                 <p>Майти Модстер занимается развитием и инновациями в русской гастрономии, а также увлекается искусством — пишет картины.</p>
               </div>
@@ -368,6 +473,13 @@
       </div>
     </footer>
     <!-- --\\-- _footer --//---->
+    <!-- --//-- _scripts --\\---->
+    <!-- build:js-->
+    <script src="vendors/jquery/dist/jquery.js"></script>
+    <script src="vendors/Swiper/dist/js/swiper.js"></script>
+    <script src="vendors/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
     <script src="js/app.js"></script>
+    <!-- endbuild-->
+    <!-- --\\-- _scripts --//---->
   </body>
 </html>

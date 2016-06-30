@@ -24,7 +24,7 @@
   margin-top: 16px;
   &_active {
     .questions__item_answer {
-      display: block;
+      height: 223px; //TODO : сделать вычисление высоты
     }
     .questions__item_link {
        border-bottom: 3px dashed transparent;
@@ -58,9 +58,11 @@
 }
 
 .questions__item_answer {
-  display: none;
   font-size: 15px;
   padding-left: 43px;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
   p {
     padding-bottom: 5px;
   }

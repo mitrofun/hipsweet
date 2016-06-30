@@ -1,0 +1,23 @@
+{
+  "name": "hipsweet",
+  "description": "homework",
+  "main": "gulpfile.js",
+  "authors": [
+    "mitri4"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mitrofun/hipsweet",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "jquery.inputmask": "^3.3.1",
+    "Swiper": "swiper#^3.3.1"
+  }
+}
