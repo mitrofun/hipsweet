@@ -46,6 +46,19 @@
   vertical-align: top;
   width: 32%;
   transition: .4s;
+  &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      border-top:10px solid transparent;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      margin-bottom: -10px;
+      left: 50%;
+      margin-left: -16px;
+      transition: all 0.7s;
+      opacity: 0;
+    }
   &:hover,
   &_active {
     background: #893213;
@@ -61,6 +74,7 @@
       margin-bottom: -10px;
       left: 50%;
       margin-left: -16px;
+      opacity: 1;
     }
     .contributor__name {
       color: #ffa92b;
@@ -186,6 +200,40 @@
 
 .send-form__checkbox {
   color: #fff;
+}
+
+.send-mail__capcha {
+  position: absolute;
+  opacity: 0;
+}
+
+.send-mail__capcha:checked + .send-mail__capcha_label:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 13px;
+  top: 4px;
+  left: 2px;
+  background: url("/img/check.png") center center no-repeat;
+}
+
+
+.send-mail__capcha_label {
+  cursor: pointer;
+  position: relative;
+  &:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    background: #fff;
+    border-radius: 2px;
+  }
 }
 
 .send-mail__submit {
