@@ -27,7 +27,7 @@ $(document).ready(function() {
 	var paragraphs = $('.contributer__description');
 
 	tabs.on('click', function(event) {
-        console.log("click");
+        console.log(event);
 		event.preventDefault();
 		tabs.removeClass('team__tabs_active');
 		paragraphs.removeClass('contributer__description_active');
@@ -40,12 +40,15 @@ $(document).ready(function() {
 		});
 	});
 
-    $(".send-mail_phone").inputmask({"mask":"8 (999) 999-99-99"});
-
+    var phone = $('.send-mail_phone');
     
-	$('.questions__item').on('click', function() {
-		console.log("click");
-		$('.questions__item').removeClass('questions__item_active');
+    phone.inputmask({'mask':'8 (999) 999-99-99'});
+
+    var questions = $('.questions__item');
+
+	questions.on('click', function() {
+		console.log(this);
+		questions.removeClass('questions__item_active');
 		$(this).addClass('questions__item_active');
 	});
 

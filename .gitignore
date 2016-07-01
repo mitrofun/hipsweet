@@ -1,7 +1,8 @@
-
 /src/.sass-cache/
 /external/
 /src/css/
 /src/tmp/
 /node_modules/
 /src/vendors/
+/settings.py
+/.env/
