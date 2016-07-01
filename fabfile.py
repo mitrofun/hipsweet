@@ -80,7 +80,7 @@ def update(user=USER, pas=PASS):
         run('git pull origin master')
         run('npm i')
         run('bundle install')
-        run('npm run build')
+        run('node_modules/gulp/bin/gulp.js build')
     reload()
 
 
@@ -102,7 +102,7 @@ def config_deploy(user=USER, pas=PASS):
     with cd(env.root):
         run('npm i')
         run('bundle install')
-        run('npm run build')
+        run('node_modules/gulp/bin/gulp.js build')
     create_config(env.build)
     link_conf()
     reload()

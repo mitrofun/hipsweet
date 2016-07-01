@@ -80,7 +80,8 @@ gulp.task('prod:css', function() {
     .pipe(compass({
         config_file: 'src/prod.rb',
         css: 'src/css',
-        sass: 'src/sass'
+        sass: 'src/sass',
+        img: 'src/img'
       }))
     .pipe(gulp.dest('build/css'))
 });
