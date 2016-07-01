@@ -6,3 +6,4 @@
 /src/vendors/
 /settings.py
 /.env/
+!/src/img/icon
