@@ -1,7 +1,6 @@
 .why-tasty {
   color: #747474;
   background: linear-gradient(to bottom right, #B4B4B3, #D3D4D4);
-  position: relative;
 }
 
 .why-tasty__left {
@@ -11,8 +10,12 @@
 }
 
 .why-tasty__right {
+  @include span(5.4 last);
+}
+
+.why-tasty__cook {
   margin-right: 140px;
-  position: absolute;
+  //position: absolute;
   min-height: 708px;
   min-width: 383px;
   margin-top: 53px;

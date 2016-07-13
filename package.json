@@ -33,12 +33,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mitrofun/hipsweet.git"
+    "url": "git+https://github.com/mitrofun/kids2.git"
   },
   "author": "mitri4",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mitrofun/hipsweet/issues"
+    "url": "https://github.com/mitrofun/kids2/issues"
   },
   "homepage": "https://github.com/mitrofun/hipsweet#readme"
 }
