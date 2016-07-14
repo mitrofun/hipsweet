@@ -142,7 +142,7 @@
   right: -62px;
   width: 227px;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
   opacity: 0;
 
   &:before {
@@ -157,6 +157,14 @@
 }
 
 .dropdown_is-active {
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 227px;
+    height: 30px;
+    right: -62px;
+  }
 
   .nav__dropdown-list {
     opacity: 1;

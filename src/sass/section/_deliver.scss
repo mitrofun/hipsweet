@@ -18,6 +18,7 @@ $dark:#393939;
   @include push(2);
   font-size: 15px;
   font-weight: 600;
+  float: none;
 }
 
 .deliver__send_link {
@@ -26,7 +27,7 @@ $dark:#393939;
 
 .sweets__list {
   @extend %clearfix;
-  margin-top: 76px;
+  margin-top: 5px;
   padding-bottom: 82px;
 }
 
