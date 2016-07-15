@@ -45,7 +45,6 @@
   display: inline-block;
   vertical-align: top;
   width: 32%;
-  transition: .4s;
   &:after {
       content: "";
       position: absolute;
@@ -56,10 +55,18 @@
       margin-bottom: -10px;
       left: 50%;
       margin-left: -16px;
-      transition: all 0.7s;
-      opacity: 0;
     }
-  &:hover,
+  &:hover {
+    background: #893213;
+    border-radius: 20px;
+    position: relative;
+    .contributor__name {
+      color: #ffa92b;
+    }
+    .contributor__position {
+      color: #fff;
+    }
+  }
   &_active {
     background: #893213;
     border-radius: 20px;
@@ -74,7 +81,6 @@
       margin-bottom: -10px;
       left: 50%;
       margin-left: -16px;
-      opacity: 1;
     }
     .contributor__name {
       color: #ffa92b;
