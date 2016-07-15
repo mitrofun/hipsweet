@@ -1,7 +1,7 @@
 .faq {
   background: url("/img/background/faq.png");
   background-size: cover;
-  color: white;
+  color: #fff;
 }
 
 .title__faq {
@@ -34,11 +34,15 @@
         color: $orange;
       }
     .questions__item_answer {
-      color: white;
+      color: #fff;
     }
   }
   &:hover {
     color: $orange;
+    .questions__item_answer { 
+      color: #fff;
+    }
+    
     .questions__item_link {
       color: $orange;
       border-bottom: 3px dashed transparent;
@@ -52,9 +56,9 @@
 
 .questions__item_link {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding-bottom: 5px;
-  border-bottom: 3px dashed white;
+  border-bottom: 3px dashed #fff;
 }
 
 .questions__item_answer {
