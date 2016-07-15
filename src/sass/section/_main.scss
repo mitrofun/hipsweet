@@ -9,11 +9,15 @@
 
 .swiper-container {
   width: 1150px;
-  height: 598px;
+  height: auto; //598px
 }
 
 .swiper-pagination {
   padding-bottom: 44px;
+}
+
+.swiper-slide {
+  height:auto;
 }
 
 .swiper-pagination-bullet {
