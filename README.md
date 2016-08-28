@@ -16,7 +16,7 @@
 * [NodeJS](https://nodejs.org/)
 * [Bower](https://bower.io/)
 * [Python 3](https://www.python.org/) - для Деплоя
-* [Nginx](https://nginx.org) - для "Боеевого сервера"
+* [Nginx](https://nginx.org) - для Сервера
 
 Для установки на OS X
 
@@ -43,7 +43,7 @@ $ node_modules/gulp/bin/gulp.js build
 
 ## Деплой
 
-Для выкладывания на продакшен сделан скрипт для ubuntu.
+Для публикации сайта сделан скрипт для ubuntu.
 
 ```
 $ virtualenv .env --no-site-packages -p python3
