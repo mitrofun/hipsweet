@@ -2,6 +2,7 @@
 
 Домашняя работа на курсе Loftschool для новичков. 
 Необходимо сверстать лендинг из PSD фиксированной ширины.
+Проект сделан для изучения технологий верстки, БЭМ неиминга, предпроцессоров HTML и CSS
 
 ##Начало
 
@@ -15,6 +16,7 @@
 * [Compass](http://compass-style.org/)
 * [NodeJS](https://nodejs.org/)
 * [Bower](https://bower.io/)
+* [Pug](http://jade-lang.com/)
 * [Python 3](https://www.python.org/) - для Деплоя
 * [Nginx](https://nginx.org) - для Сервера
 
@@ -26,6 +28,7 @@ $ gem install sass
 $ gem install compass
 $ gem install susy
 $ npm install -g bower
+$ npm install jade --global
 ```
 
 для установки NodeJS скачайте [установщик](https://nodejs.org/en/download/)
