@@ -53,12 +53,8 @@ $ cp settings.py.example settings.py
 $ fab deploy
 ```
 
-## Authors
+## Авторы
 
-* **Dmitriy Shesterkin** - *Initial work* - [mitrofun](https://github.com/mitrofun)
+* **Дмитрий Шестёркин** - [mitrofun](https://github.com/mitrofun)
 
-See also the list of [contributors](https://github.com/mitrofun/drugofilter/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+Так же смотрите [соавторы](https://github.com/mitrofun/drugofilter/contributors).
