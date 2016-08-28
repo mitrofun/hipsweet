@@ -60,4 +60,4 @@ $ fab deploy
 
 * **Дмитрий Шестёркин** - [mitrofun](https://github.com/mitrofun)
 
-Так же смотрите [соавторы](https://github.com/mitrofun/drugofilter/contributors).
+Так же смотрите [соавторы](https://github.com/mitrofun/hipsweet/contributors).
