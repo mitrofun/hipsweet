@@ -35,7 +35,7 @@ $ npm install jade --global
 
 Для установки на другие платформы, поситите оффициальные сайты (ссылки выше)
 
-###Устанвка
+###Установка
 
 ```
 $ git clone https://github.com/mitrofun/hipsweet
